@@ -11,6 +11,9 @@ console.log("🔹 ZOOM_CLIENT_SECRET:", process.env.ZOOM_CLIENT_SECRET);
 console.log("🔹 ZOOM_PORT:", process.env.ZOOM_PORT);
 
 app.post('/api/zoom/generate-token', (req, res) => {
+    console.log("🔹 Recibida solicitud en /api/zoom/generate-token");
+    console.log("🔹 Body recibido:", req.body);
+
     try {
         const { meetingNumber, role } = req.body;
 

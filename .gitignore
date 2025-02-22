@@ -1,3 +1,4 @@
 node_modules/
 pm2.log
 logs/
+.env
